@@ -1,269 +1,111 @@
-import Link from "next/link";
-import { GitHubIcon } from "../components/icons/GitHubIcon";
-import { LinkedInIcon } from "../components/icons/LinkedInIcon";
-import { XIcon } from "../components/icons/XIcon";
+import {
+  AmbitLogo,
+  BarepapersLogo,
+  BimLogo,
+  CDGOLogo,
+  ClevertechLogo,
+  ConsultlyLogo,
+  EvercastLogo,
+  Howdy,
+  JarockiMeLogo,
+  JojoMobileLogo,
+  Minimal,
+  MobileVikingsLogo,
+  MonitoLogo,
+  NSNLogo,
+  ParabolLogo,
+  TastyCloudLogo,
+  YearProgressLogo,
+} from "@/images/logos";
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Jason Liu",
-  initials: "jxnl",
-  location: "New York",
-  locationLink: "https://www.google.com/maps/place/New+York",
+  name: "Harsh Thavai",
+  initials: "HT",
+  location: "Mumbai ,India",
+  locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
-    "I am currently on sabbatical at South Park Commons, where I consult and advise fast growing startups on applied AI and tech strategy.",
-  summary:
-    <>
-      Check out my {" "}
-      <Link className="underline" href="https://jxnl.github.io/blog/">blog</Link>, if you are looking for my writing.  
-    </>,
-  avatarUrl: "https://avatars.githubusercontent.com/u/4852235?v=4",
-  personalWebsiteUrl: "https://jxnl.github.io/blog/",
+    "A data science student with a passion for machine learning and a penchant for exploring cutting-edge AI models, including LLM. Actively seeking internships to apply", 
   contact: {
-    email: "jason@jxnl.co",
+    email: "harsh.thavai@somaiya.edu",
+    tel: "8169207663",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/jxnl",
+        url: "https://github.com/harsh-thavai",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/jxnlco/",
+        url: "https://www.linkedin.com/in/harsh-thavai-3683301b6/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/jxnlco",
+        url: "https://twitter.com/harsh_thavai",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "University of Waterloo",
-      degree: "B.Math. Computational Mathematics and Statistics",
-      start: "2012",
-      end: "2017",
-    },
-  ],
-  work: [
-    {
-      company: "567",
-      link: "https://jxnl.github.io/blog/",
-      badges: ["Consulting"],
-      title: "Owner / Consultant",
-      logo: "", // Add logo if available
-      start: "2023",
-      end: "Present",
-      description:
-        "Working with seed stage companies, helping founders with tech strategy, research, and infrastructure.",
-    },
-    {
-      company: "South Park Commons",
-      link: "https://www.southparkcommons.com/",
-      badges: ["Sabbatical"],
-      title: "Member",
-      logo: "", // Add logo if available
-      start: "2023",
-      end: "Present",
-      description:
-        "Exploring LLM tooling around structured extraction and self-hosting. Launched Youtube University and developing Journal, an AI-powered journaling application.",
-    },
-    {
-      company: "Stitchfix",
-      link: "https://www.stitchfix.com/",
-      badges: ["System"],
-      title: "Staff ML Engineer",
-      logo: "", // Add logo if available
-      start: "2018",
-      end: "2023",
-      description: (
-        <>
-          <li>
-            Designed Flight framework, improving reliability, scalability,
-            adopted by over 80% of organization, servicing 350 million daily
-            requests.{" "}
-            <a href="https://newsroom.stitchfix.com/blog/your-shop-is-getting-an-update-shop-by-category-will-make-it-easier-to-discover-things-youll-love/">[1]</a>
-          </li>
-          <li>
-            Led vision research, managed data acquisition, fine-tuned models, developed
-            300,000+ outfit dataset to power new Stitch Fix outfit recommender. 
-          </li>
-          <li>
-            Developed product similarity search with multi-modal embeddings,
-            boosting revenue by over $50 million annually. <a href="https://newsroom.stitchfix.com/blog/how-we-understand-your-personal-style/">[2]</a>
-          </li>
-        </>
-      ),
-    },
-    {
-      company: "Facebook",
-      link: "https://about.meta.com/actions/promoting-safety-and-expression/",
-      badges: ["Data Science"],
-      title: "Data Scientist",
-      logo: "",
-      start: "2017",
-      end: "2017",
-      description:
-        "Created algorithms for identifying harmful content and developed dashboards to detect malicious activities.",
-    },
-    {
-      company: "New York University",
-      link: "https://www.nyu.edu/",
-      badges: ["Research"],
-      title: "Research Assistant",
-      start: "2015",
-      end: "2017",
-      description:
-        "Under Rumi Chunara, centered around public health and social media.",
-      logo: "", // Path to NYU logo image
+      school: "Somaiya Vidyavihar University",
+      degree: "Bachelor's Degree in Data Science",
+      start: "aug-2022",
+      end: "expected-aug-2025",
     },
   ],
   skills: [
     "Python",
-    "Pytorch",
-    "LLMs",
-    "Prompt Engineering",
-    "Structured Extraction",
-    "Observability",
-    "Developer Tools",
-    "Machine Learning",
-    "Data Science",
+    "Numpy/Pandas/Matplotlib/Seaborn",
+    "Scypy/Scikit-learn/Pytorch/LangChain/LlamaIndex",
+    "Open-source and paid LLM models (Llama2, Mistral,OpenAI,Google Gemini Pro)",
+    "Streamlit/Flask/Gradio",
+    "MongoDB/MySQL/CouchDB/Plsql/AmazonBedrock/Huggingface",
+    "Fine-tuning with custom data/VectorEmbedding/NLP"
   ],
   projects: [
     {
-      title: "Instructor",
-      techStack: ["python", "llms", "structured extraction"],
-      description:
-        "Structured extraction for LLMS using Pydantic, Over 30k monthly downloads on PyPI.",
+      title: "ATS Resume LLM App",
+      techStack: [
+        "Python",
+        "Gemini pro",
+        "Streamlit"
+      ],
+      description: "An application optimizing resumes for ATS using LLM",
       link: {
-        label: "Instructor",
-        href: "https://jxnl.github.io/instructor/",
+        label: "Smart ATS",
+        href: "https://atsllm.streamlit.app/",
       },
     },
     {
-      title: "Multimodal Search",
-      techStack: ["Stitchfix", "pytorch", "representation learning", "search"],
+      title: "Chat with PDF",
+      techStack: ["StreamLit", "Pyhton", "Langchain", "chromadb","faiss"],
       description:
-        "Lead computer vision research, and embedding search system using multi-modal embeddings powered by image, text, and impression data.",
+        "An application to upload PDF files, extract text, and ask questions based on the content",
       link: {
-        label: "Stylist Shuffle",
-        href: "https://www.stitchfix.com/women/blog/inside-stitchfix/how-style-shuffle-works/",
+        label: "Chat with PDF",
+        href: "https://chatwithpdfgenai.streamlit.app/",
       },
     },
     {
-      title: "RecSys Framework",
-      techStack: ["devops", "python", "orchestration", "observability"],
+      title: "Penguin Measurements Clustering using K-Means-PCA",
+      techStack: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
       description:
-        "Designed and implemented Flight, a recommendation framework that improved system reliability and scalability, handling over 350 million daily requests.",
+        "Penguin Measurements Clustering using K-Means and PCA utilizes several technologies and frameworks for data analysis and machine learning tasks",
       link: {
-        label: "Learn more about Flight at Stitchfix",
-        href: "https://jxnl.github.io/blog/writing/2022/08/01/stitchfix-framework/",
+        label: "kaggle.com",
+        href: "https://www.kaggle.com/code/harshthavai/penguin-measurements-clustering-using-k-means-pca",
       },
-    },
-    {
-      title: "Journal",
-      techStack: ["typescript", "prompt engineering"],
-      description:
-        "AI-powered journaling application with long-term memory and semantic search.",
-      link: {
-        label: "Journal",
-        href: "http://usejournal.xyz",
-      },
-    },
+    },   
   ],
-  clients: [
+  Hackathon: [
     {
-      title: "Rewind AI",
-      techStack: ["memory", "personal computing"],
-      description: "Rewind AI is a personal memory assistant that helps you remember, organize, and navigate your life.",
-      link: {
-        label: "rewind.ai",
-        href: "http://rewind.ai",
-      },
-    },
-    {
-      title: "Naro",
-      techStack: ["python", "prompt engineering", "sales"],
+      project: "Daily_dac",
+      link: "https://devpost.com/software/daily-doc",
+      prize: "3rd",
       description:
-        "Naro sits in the background, using contextual clues to proactively select the right content and messaging for each customer conversation, from emails to meetings.",
-      link: {
-        label: "narohq.com",
-        href: "http://narohq.com",
-      },
+        "At Daily Doc, our goal was to create an interactive chat interface that connects users with a virtual medical expert, providing instant medical insights and guidance. Inspired by the advancements in natural language processing and the power of OpenAI's GPT-3.5 Turbo model, we set out to build a user-friendly and informative tool for individuals seeking medical information and advice Technologies: python, gradio, gpt3.5-turbo, github",
     },
-    {
-      title: "Trunk Tools",
-      techStack: [
-        "construction",
-        "technical advisor",
-        "retrival",
-      ],
-      description:
-        "Trunk Tools addresses the skilled labor shortage in construction, enhancing workforce productivity through AI-based tools.",
-      link: {
-        label: "trunktools.com",
-        href: "https://trunktools.com/",
-      },
-    },
-    {
-      title: "Modal Labs",
-      techStack: ["technical writing", "python"],
-      description:
-        "Modal specializes in cloud functions, offering a platform for running generative AI models, large-scale batch jobs, and more.",
-      link: {
-        label: "modal.com",
-        href: "https://modal.com/",
-      },
-    },
-    {
-      title: "Pydantic",
-      techStack: ["technical writing", "python"],
-      description:
-        "Pydantic provides data validation and settings management using Python type annotations, enforcing type hints at runtime with user-friendly error handling.",
-      link: {
-        label: "pydantic.dev",
-        href: "http://pydantic.dev",
-      },
-    },
-    {
-      title: "Weight & Biases",
-      techStack: [
-        "technical writing",
-        "education",
-        "machine learning",
-      ],
-      description:
-        "Wandb (Weights & Biases) provides a platform for tracking machine learning experiments, offering tools for visualization, comparison, and collaboration in ML projects.",
-      link: {
-        label: "wandb.ai",
-        href: "https://wandb.ai/",
-      },
-    },
-    {
-      title: "New Computer",
-      techStack: ["personal computing", "python"],
-      description:
-        "Dot by New Computer is an intelligent guide designed to help you remember, organize, and navigate your life.",
-      link: {
-        label: "new.computer",
-        href: "http://new.computer",
-      },
-    },
-
-    {
-      title: "Kay.ai",
-      techStack: [
-        "retrieval",
-        "evals",
-        "infrastucture",
-        "python",
-      ],
-      description:
-        "Retrieve relevant context from the semantic web for your LLM apps with fully hosted embeddings.",
-      link: {
-        label: "Kay.ai",
-        href: "http://Kay.ai",
-      },
-    },
-  ],
+  ]
 } as const;
